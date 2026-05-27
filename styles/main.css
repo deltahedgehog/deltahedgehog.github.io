@@ -33,11 +33,11 @@
 }
 
 h1 {
-    color: var(--color-text-primary)
+    color: var(--color-text-primary);
 }
 
 body {
     background-color: var (--color-bg-light);
-    color: var(--color-text-primary)
-    font-family: var(var(--font-family-base))
+    color: var(--color-text-primary);
+    font-family: var(--font-family-base);
 }

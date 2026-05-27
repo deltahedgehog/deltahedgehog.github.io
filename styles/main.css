@@ -2,7 +2,14 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/Inter_18pt-Regular.ttf') format('ttf');
+    src: url('../fonts/Inter_18pt-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Inter_18pt-Medium.ttf');
 }
 
 @font-face {
@@ -12,24 +19,18 @@
     src: url('../fonts/Inter_18pt-SemiBold.ttf');
 }
 
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/Inter_18pt-Bold.ttf');
-}
-
 
 :root {
     font-size: 62.5%;
     --color-text-primary: #18216D;
+    --color-text-secondary: rgba(24, 33, 109, 0.6);
     --color-bg-light: #F5F5F5;
     --color-button: #00ECD0;
 
     --font-family-base: 'Inter', 'Arial', sans-serif;
-    --font-weight-regular: 400
-    --font-weight-semibold: 600
-    --font-weight-bold: 700
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
 }
 
 h1 {
@@ -40,4 +41,54 @@ body {
     background-color: var (--color-bg-light);
     color: var(--color-text-primary);
     font-family: var(--font-family-base);
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-weight: var(--font-weight-regular);
+    letter-spacing: 0rem;
+}
+
+h1, 
+h2, 
+h3 {
+    font-weight: var(--font-weight-semibold);
+}
+
+h1 {
+    font-size: 2.8rem;
+    line-height: 2.7rem;
+    letter-spacing: 0rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+}
+
+p {
+    color: var(--color-text-primary);
+}
+
+p strong {
+    color: var(--color-text-secondary);
+}
+
+a.btn {
+    display: block;
+    margin: 40px 0;
+    background-color: var(--color-button);
+    color: var(--color-text-primary);
+    padding: 12px;
+    border-radius: 16px;
+    text-align: center;
 }

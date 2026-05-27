@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Inter_18pt-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Inter_18pt-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Inter_18pt-Bold.ttf');
+}
+
+
+:root {
+    font-size: 62.5%;
+    --color-text-primary: #18216D;
+    --color-bg-light: #F5F5F5;
+    --color-button: #00ECD0;
+
+    --font-family-base: 'Inter', 'Arial', sans-serif;
+    --font-weight-regular: 400
+    --font-weight-semibold: 600
+    --font-weight-bold: 700
+}
+
+h1 {
+    color: var(--color-text-primary)
+}
+
+body {
+    background-color: var (--color-bg-light);
+    color: var(--color-text-primary)
+    font-family: var(var(--font-family-base))
+}
